@@ -17,3 +17,6 @@ kaggle-varcel-mcp = "server:mcp"
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
+
+[tool.vercel]
+entrypoint = "vercel_app:app"
