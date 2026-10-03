@@ -1,14 +1,14 @@
 {
-  "builds": [
-    {
-      "src": "server.py",
-      "use": "@vercel/python"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "vercel_app.py": {
+      "maxDuration": 800
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "server.py"
+      "source": "/mcp",
+      "destination": "/vercel_app.py/mcp"
     }
   ]
 }
