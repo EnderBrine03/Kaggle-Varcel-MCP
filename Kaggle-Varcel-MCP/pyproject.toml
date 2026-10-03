@@ -1,0 +1,19 @@
+[project]
+name = "kaggle-varcel-mcp"
+version = "1.0.0"
+description = "MCP server that exposes the Kaggle API to ChatGPT, Claude, Cursor and other MCP clients"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "kaggle>=1.6.17",
+    "uvicorn>=0.30.0",
+    "starlette>=0.38.0",
+]
+
+[project.scripts]
+kaggle-varcel-mcp = "server:mcp"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

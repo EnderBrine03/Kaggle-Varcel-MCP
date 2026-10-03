@@ -1,0 +1,4 @@
+mcp>=1.2.0
+kaggle>=1.6.17
+uvicorn>=0.30.0
+starlette>=0.38.0
